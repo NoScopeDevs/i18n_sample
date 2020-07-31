@@ -1,0 +1,12 @@
+{
+    "pageHomeListTitle": "Algunas cadenas localizadas",
+    "pageHomeSamplePlaceholder": "Bienvenido {name}",
+    "pageHomeSamplePlaceholdersOrdered": "Mi nombre es {lastName}, {firstName} {lastName}",
+    "@pageHomeSamplePlaceholdersOrdered": {
+        "placeholders": {
+            "firstName": {},
+            "lastName": {}
+        }
+    },
+    "pageHomeSamplePlural": "{howMany, plural, one{Tienes 1 mensaje} other{Tienes {howMany} mensajes}}"
+}
