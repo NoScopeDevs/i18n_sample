@@ -12,25 +12,27 @@ import 'intl/messages_all.dart';
 
 class NoScopeDevsLocalizations {
   NoScopeDevsLocalizations();
-  
+
   static NoScopeDevsLocalizations current;
-  
-  static const AppLocalizationDelegate delegate =
-    AppLocalizationDelegate();
+
+  static const AppLocalizationDelegate delegate = AppLocalizationDelegate();
 
   static Future<NoScopeDevsLocalizations> load(Locale locale) {
-    final name = (locale.countryCode?.isEmpty ?? false) ? locale.languageCode : locale.toString();
-    final localeName = Intl.canonicalizedLocale(name); 
+    final name = (locale.countryCode?.isEmpty ?? false)
+        ? locale.languageCode
+        : locale.toString();
+    final localeName = Intl.canonicalizedLocale(name);
     return initializeMessages(localeName).then((_) {
       Intl.defaultLocale = localeName;
       NoScopeDevsLocalizations.current = NoScopeDevsLocalizations();
-      
+
       return NoScopeDevsLocalizations.current;
     });
-  } 
+  }
 
   static NoScopeDevsLocalizations of(BuildContext context) {
-    return Localizations.of<NoScopeDevsLocalizations>(context, NoScopeDevsLocalizations);
+    return Localizations.of<NoScopeDevsLocalizations>(
+        context, NoScopeDevsLocalizations);
   }
 
   /// `Some localized strings`
@@ -76,7 +78,8 @@ class NoScopeDevsLocalizations {
   }
 }
 
-class AppLocalizationDelegate extends LocalizationsDelegate<NoScopeDevsLocalizations> {
+class AppLocalizationDelegate
+    extends LocalizationsDelegate<NoScopeDevsLocalizations> {
   const AppLocalizationDelegate();
 
   List<Locale> get supportedLocales {
@@ -89,7 +92,8 @@ class AppLocalizationDelegate extends LocalizationsDelegate<NoScopeDevsLocalizat
   @override
   bool isSupported(Locale locale) => _isSupported(locale);
   @override
-  Future<NoScopeDevsLocalizations> load(Locale locale) => NoScopeDevsLocalizations.load(locale);
+  Future<NoScopeDevsLocalizations> load(Locale locale) =>
+      NoScopeDevsLocalizations.load(locale);
   @override
   bool shouldReload(AppLocalizationDelegate old) => false;
 

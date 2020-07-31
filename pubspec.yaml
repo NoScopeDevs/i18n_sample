@@ -11,12 +11,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
-  # i18n
   flutter_localizations:
     sdk: flutter
-  i18n_extension: ^1.4.2
 
+  yaml: ^2.2.1
+  i18n_extension: ^1.4.2
   cupertino_icons: ^0.1.3
 
 dev_dependencies:
@@ -25,8 +24,10 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - lib/yaml/strings/
 
 flutter_intl:
   enabled: true
   class_name: NoScopeDevsLocalizations 
-  main_locale: en 
+  main_locale: en

@@ -3,9 +3,9 @@ import 'package:i18n_extension/i18n_extension.dart';
 extension Localization on String {
   static var _t = Translations('en_us') +
       {
-        'en_us': 'Hello World',
-        'pt_br': 'Olá mundo',
-        'es_es': 'Hola mundo',
+        'en_us': 'Hello extensions!',
+        'pt_br': 'Olá extensões!',
+        'es_es': 'Hola extensiones!',
       } +
       {
         'en_us': 'Welcome',

@@ -38,7 +38,7 @@ class _Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text('Welcome'.i18n)),
       body: Container(
-        child: Text('Hello World'.i18n),
+        child: Text('Hello extensions!'.i18n),
         alignment: Alignment.center,
       ),
     );
