@@ -1,4 +1,4 @@
-# Ejemplos de i18n
+# Ejemplos de internacionalización 🇳🇮 🇺🇸 🇧🇷 
 
 4 maneras de internacionalizar en [Flutter](https://flutter.dev).
 
